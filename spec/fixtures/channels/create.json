@@ -1,0 +1,27 @@
+{
+    "ok": true,
+    "channel": {
+        "id": "C024BE91L",
+        "name": "fun",
+        "created": 1360782804,
+        "creator": "U024BE7LH",
+        "is_archived": false,
+        "is_member": true,
+        "is_general": false,
+        "last_read": "0000000000.000000",
+        "latest": null,
+        "unread_count": 0,
+        "unread_count_display": 0,
+        "members": [ "user_uid1", "user_uid2" ],
+        "topic": {
+            "value": "",
+            "creator": "",
+            "last_set":0
+        },
+            "purpose": {
+            "value": "",
+            "creator": "",
+            "last_set":0
+        }
+    }
+}

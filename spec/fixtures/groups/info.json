@@ -1,0 +1,36 @@
+{
+    "ok": true,
+    "group": {
+        "id": "G065FQQ3B",
+        "name": "hihihi-archived2",
+        "is_group": true,
+        "created": 1433908397,
+        "creator": "U043CDAQU",
+        "is_archived": true,
+        "parent_group": "G065FU34P",
+        "is_open": true,
+        "last_read": "0000000000.000000",
+        "latest": {
+            "user": "U043CDAQU",
+            "type": "message",
+            "subtype": "group_archive",
+            "text": "<@U043CDAQU|sly_fox> archived the group",
+            "ts": "1433908711.000006"
+        },
+        "unread_count": 0,
+        "unread_count_display": 0,
+        "members": [
+            "U043CDAQU"
+        ],
+        "topic": {
+            "value": "",
+            "creator": "",
+            "last_set": 0
+        },
+        "purpose": {
+            "value": "",
+            "creator": "",
+            "last_set": 0
+        }
+    }
+}

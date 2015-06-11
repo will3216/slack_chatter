@@ -1,0 +1,42 @@
+{
+    "ok": true,
+    "file": {
+        "id": "F0439RHU9",
+        "created": 1426800248,
+        "timestamp": 1426800248,
+        "name": "Uploading_Your_Files_Into_Slack",
+        "title": "Uploading Your Files Into Slack",
+        "mimetype": "text/plain",
+        "filetype": "post",
+        "pretty_type": "Post",
+        "user": "USLACKBOT",
+        "editable": true,
+        "size": 930,
+        "mode": "post",
+        "is_external": false,
+        "external_type": "",
+        "is_public": true,
+        "public_url_shared": false,
+        "url": "https://slack-files.com/files-pub/T043CDAQN-F0439RHU9-0e613fdb5c/uploading_your_files_into_slack",
+        "url_download": "https://slack-files.com/files-pub/T043CDAQN-F0439RHU9-0e613fdb5c/download/uploading_your_files_into_slack",
+        "url_private": "https://files.slack.com/files-pri/T043CDAQN-F0439RHU9/uploading_your_files_into_slack",
+        "url_private_download": "https://files.slack.com/files-pri/T043CDAQN-F0439RHU9/download/uploading_your_files_into_slack",
+        "permalink": "https://vagabond-androids.slack.com/files/slackbot/F0439RHU9/uploading_your_files_into_slack",
+        "permalink_public": "https://slack-files.com/T043CDAQN-F0439RHU9-0e613fdb5c",
+        "edit_link": "https://vagabond-androids.slack.com/files/slackbot/F0439RHU9/uploading_your_files_into_slack/edit",
+        "preview": "Slack lets you add your files into a channel to get feedback from your team. Anyone who can see the document can add comments, and all those comments stay with the file. You can add your files into additional channels with the share command, and all comments and changes will flow back to those channels.\n…",
+        "channels": [],
+        "groups": [],
+        "ims": [],
+        "comments_count": 0
+    },
+    "content": "Slack lets you add your [files](https://vagabond-androids.slack.com/help/files) into a channel to get feedback from your team. Anyone who can see the document can add comments, and all those comments stay with the file. You can add your files into additional channels with the share command, and all comments and changes will flow back to those channels.\n\nJust drag and drop the file into the Slack web app or click + File to the left of the chat input. You will be prompted to add a title, select a channel or individual, and will also have an option to make the file private for your eyes only. You can also add files from the mobile app using the + button in the Files tab.\n\nSharing a file with an individual in a direct message won't make that file public if it wasn't already; you can share private files on an individual basis and otherwise keep them private.\n\nAll the text in your file is indexed and searchable. Even PDFs.",
+    "content_html": "<p>Slack lets you add your <a href=\"https://vagabond-androids.slack.com/help/files\">files</a> into a channel to get feedback from your team. Anyone who can see the document can add comments, and all those comments stay with the file. You can add your files into additional channels with the share command, and all comments and changes will flow back to those channels.</p>\n\n<p>Just drag and drop the file into the Slack web app or click + File to the left of the chat input. You will be prompted to add a title, select a channel or individual, and will also have an option to make the file private for your eyes only. You can also add files from the mobile app using the + button in the Files tab.</p>\n\n<p>Sharing a file with an individual in a direct message won't make that file public if it wasn't already; you can share private files on an individual basis and otherwise keep them private.</p>\n\n<p>All the text in your file is indexed and searchable. Even PDFs.</p>\n",
+    "comments": [],
+    "paging": {
+        "count": 100,
+        "total": 0,
+        "page": 1,
+        "pages": 0
+    }
+}

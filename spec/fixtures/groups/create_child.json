@@ -1,0 +1,24 @@
+{
+    "ok": true,
+    "group": {
+        "id": "G065FQQ3B",
+        "name": "hihihi",
+        "is_group": true,
+        "created": 1433908397,
+        "creator": "U043CDAQU",
+        "is_archived": false,
+        "members": [
+            "U043CDAQU"
+        ],
+        "topic": {
+            "value": "",
+            "creator": "",
+            "last_set": 0
+        },
+        "purpose": {
+            "value": "",
+            "creator": "",
+            "last_set": 0
+        }
+    }
+}

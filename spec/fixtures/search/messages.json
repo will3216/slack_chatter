@@ -1,0 +1,22 @@
+{
+    "ok": true,
+    "query": "w",
+    "messages": {
+        "total": 0,
+        "pagination": {
+            "total_count": 0,
+            "page": 1,
+            "per_page": 20,
+            "page_count": 0,
+            "first": 1,
+            "last": 0
+        },
+        "paging": {
+            "count": 20,
+            "total": 0,
+            "page": 1,
+            "pages": 0
+        },
+        "matches": []
+    }
+}

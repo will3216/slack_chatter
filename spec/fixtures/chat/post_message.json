@@ -1,0 +1,12 @@
+{
+    "ok": true,
+    "channel": "C064VQT1N",
+    "ts": "1433907958.000003",
+    "message": {
+        "text": "wiggle wiggle wiggle",
+        "username": "bot",
+        "type": "message",
+        "subtype": "bot_message",
+        "ts": "1433907958.000003"
+    }
+}
