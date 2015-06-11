@@ -22,6 +22,7 @@ Or install it yourself as:
     $ gem install slack_chatter
 
 ## Basic Configuration
+To use this client you will need a slack api access token which can be found [here](https://api.slack.com/web)
 
 #### Create a new client instance
 ```ruby
