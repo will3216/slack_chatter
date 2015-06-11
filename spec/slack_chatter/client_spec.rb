@@ -13,7 +13,7 @@ describe SlackChatter::Client do
     let(:port)       { nil }
     let(:host)       { nil }
     let(:uri_scheme) { nil }
-    subject { SlackChatter::Client.new(:fake_id, :fake_user, nil, uri_port: port, uri_host: host, uri_scheme: uri_scheme) }
+    subject { SlackChatter::Client.new(:fake_id, username: "fake_user", uri_port: port, uri_host: host, uri_scheme: uri_scheme) }
 
 
     it { expect(subject.api_uri_root).to eq 'https://slack.com/api/' }

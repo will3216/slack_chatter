@@ -5,7 +5,7 @@ module SlackChatter
 
 
       def close user_id
-        call_method("im", "close", {"user" => channel_id})
+        call_method("im", "close", {"user" => user_id})
       end
 
       def history user_id, opts={}
@@ -13,7 +13,7 @@ module SlackChatter
         # oldest          - Start of time range of messages to include in results
         # inclusive       - Include messages with latest or oldest timestamp in results (send 0/1)
         # count           - Number of messages to return, between 1 and 1000
-        call_method("im", "history", {"channel" => channel_id}.merge(opts))
+        call_method("im", "history", {"user" => user_id}.merge(opts))
       end
 
       def list
@@ -23,11 +23,11 @@ module SlackChatter
 
       def mark user_id, epoch_time_stamp
         # ts               - Timestamp of the most recently seen message
-        call_method("im", "mark", {"channel" => channel_id, "ts" => epoch_time_stamp})
+        call_method("im", "mark", {"user" => user_id, "ts" => epoch_time_stamp})
       end
 
       def open user_id
-        call_method("im", "open", {"user" => channel_id})
+        call_method("im", "open", {"user" => user_id})
       end
     end
   end
