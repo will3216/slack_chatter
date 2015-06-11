@@ -271,7 +271,7 @@ search:
       token: token
       query: string
     options:
-      sort: {choice: ["choice", "timestamp"]}
+      sort: {choice: ["score", "timestamp"]}
       sort_dir: {choice: ["asc", "desc"]}
       highlight: {choice: ["1"]}
       count: integer
@@ -281,7 +281,7 @@ search:
       token: token
       query: string
     options:
-      sort: {choice: ["choice", "timestamp"]}
+      sort: {choice: ["score", "timestamp"]}
       sort_dir: {choice: ["asc", "desc"]}
       highlight: {choice: ["1"]}
       count: integer
@@ -291,7 +291,7 @@ search:
       token: token
       query: string
     options:
-      sort: {choice: ["choice", "timestamp"]}
+      sort: {choice: ["score", "timestamp"]}
       sort_dir: {choice: ["asc", "desc"]}
       highlight: {choice: ["1"]}
       count: integer
