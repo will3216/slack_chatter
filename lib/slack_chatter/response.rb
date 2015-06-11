@@ -7,8 +7,8 @@ module SlackChatter
     def initialize response
       parsed_res = JSON.parse(response.body)
       super(parsed_res)
+      self.response = response
       self.code = response.code
-      self.send("success?=", (parsed_res["ok"] == true))
     end
 
     def to_h
@@ -17,6 +17,14 @@ module SlackChatter
 
     def to_json
       JSON.dump(to_h)
+    end
+
+    def success?
+      parsed_res["ok"]
+    end
+
+    def failed?
+      !parsed_res["ok"]
     end
 
   end

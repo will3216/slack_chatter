@@ -8,21 +8,17 @@ require 'slack_chatter/response'
 module SlackChatter
   class Client
 
-    def self.test_client
-      self.new("xoxp-4114452838-4114452844-6031365557-2cc510")
-    end
-
     include SlackChatter::Api::Namespaces
 
     attr_reader :access_token, :username, :icon_url, :namespaces
-    # https://slack.com/api/METHOD
-    def initialize(access_token, username=nil, icon_url=nil, *args)
-      opts = (args.last.is_a?(Hash) ? args.last : {}).with_indifferent_access.reject{|_,v| v.nil?}
+
+    def initialize(access_token, opts={})
+      opts = opts.with_indifferent_access.reject{|_,v| v.nil?}
       opts.reverse_merge!(default_slack_configuration)
 
       @access_token   =     access_token
-      @username       =     username || opts[:username]
-      @icon_url       =     icon_url
+      @username       =     opts[:username]
+      @icon_url       =     opts[:icon_url]
       @uri_scheme     =     opts[:uri_scheme]
       @uri_host       =     opts[:uri_host]
       @uri_base_path  =     opts[:uri_base_path]
@@ -33,8 +29,7 @@ module SlackChatter
       {
         uri_scheme:     "https",
         uri_host:       "slack.com",
-        uri_base_path:  "/api",
-        username:       "RubySlackBot"
+        uri_base_path:  "/api"
       }
     end
 
