@@ -28,5 +28,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'httparty', '~> 0.13.3'
   spec.add_dependency 'httmultiparty'
   spec.add_dependency 'rake'
-  spec.add_dependency 'activesupport', '>= 3.2.11', '<= 4.1.7'
+  spec.add_dependency 'activesupport'
 end
