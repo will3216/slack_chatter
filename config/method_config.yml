@@ -228,11 +228,11 @@ im:
   close:
     args:
       token: token
-      channel: id
+      user: id
   history:
     args:
       token: token
-      channel: id
+      user: id
     options:
       latest: epoch   # End of time range of messages to include in results
       oldest: epoch   # Start of time range of messages to include in results
@@ -244,12 +244,12 @@ im:
   mark:
     args:
       token: token
-      channel: id
+      user: id
       ts: epoch
   open:
     args:
       token: token
-      channel: id
+      user: id
 
 oauth:
   access:
