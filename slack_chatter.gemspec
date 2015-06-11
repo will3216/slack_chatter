@@ -25,7 +25,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec'
   spec.add_development_dependency 'rspec-encoding-matchers'
   spec.add_dependency 'json', '>= 1.7.7'
-  spec.add_dependency 'httparty', '~> 0.13.3'
   spec.add_dependency 'httmultiparty'
   spec.add_dependency 'rake'
   spec.add_dependency 'activesupport'
