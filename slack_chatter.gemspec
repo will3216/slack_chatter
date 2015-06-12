@@ -7,11 +7,11 @@ Gem::Specification.new do |spec|
   spec.name          = "slack_chatter"
   spec.version       = SlackChatter::VERSION
   spec.authors       = ["Will Bryant"]
-  spec.email         = ["william@tout.com"]
+  spec.email         = ["will.t.bryant@gmail.com"]
 
   spec.summary       = %q{Simple to use SlackChatter wrapper}
   spec.description   = %q{Simple to use Slack API wrapper which makes it easy to access and use the Slack API client without much knowledge of how it works}
-  spec.homepage      = "https://github.com/will3216/slack_api_rb"
+  spec.homepage      = "https://github.com/will3216/slack_chatter"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
