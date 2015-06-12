@@ -1,5 +1,6 @@
 
 require 'httmultiparty'
+require 'active_support'
 require 'active_support/core_ext'
 
 require 'slack_chatter/api/namespaces'

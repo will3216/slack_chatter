@@ -14,8 +14,10 @@ module SlackChatter
         call_method("files", "list", opts)
       end
 
-      def upload
-        raise "not implemented"
+      def upload opts={}
+        opts = opts.with_indifferent_access
+        filename = opts.delete(:file) || opts.delete(:content)
+        client.post("files.upload", {}, query: opts.merge({file: UploadIO.new(File.open(filename), "multipart/form-data")}))
       end
     end
   end

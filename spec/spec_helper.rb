@@ -80,8 +80,12 @@ def some_request(method, uri)
   a_request(method, /.*?#{uri}.*?/)
 end
 
+def fixture_location(namespace, file)
+  File.join(File.expand_path('../fixtures/', __FILE__), namespace, file)
+end
+
 def fixture(namespace, file)
-  File.read(File.join(File.expand_path('../fixtures/', __FILE__), namespace, file))
+  File.read(fixture_location(namespace, file))
 end
 
 def json_fixture(namespace, file)

@@ -12,4 +12,19 @@ describe SlackChatter::Api::Files do
       end
     end
   end
+
+  describe "#upload" do
+    let(:client) { SlackChatter::Client.new("test-token") }
+    let(:filename) { fixture_location("files", "upload.jpeg") }
+    subject { client.files.upload({file: filename}) }
+
+    before do
+      allow(UploadIO).to receive(:new).and_return(UploadIO.new(File.open(filename), "multipart/form-data"))
+    end
+
+    it "should send the file" do
+      expect(client).to receive(:post).with("files.upload", {}, query: {file: UploadIO.new(File.open(filename), "multipart/form-data")})
+      subject
+    end
+  end
 end

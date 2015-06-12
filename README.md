@@ -1,9 +1,12 @@
 # SlackChatter
 
 SlackChatter is a simple-to-use Slack API wrapper for ruby which makes it quick and easy to constantly annoy your friends, co-workers, and loved ones with waaayyyyy to many process status updates. It provides easy-access to all of the functionallity supported by the Slack Api with the following exceptions:
-- File uploading
 - Real-Time Messaging
 (These are currently in the works and should be available shortly)
+
+Release Notes:
+- 0.9.0 - Added File uploading
+- 0.8.5 - Stable bug-free version
 
 ## Installation
 
@@ -358,7 +361,43 @@ Options:
 - page: integer - Page number of results to return
 
 #### Upload a File
-**Not Currently Supported**
+```ruby
+response = client.files.upload({file: "../robot.png"})
+=> #<SlackChatter::Response ok=true, file={
+  "id"=>"F068PHD0R",
+  "created"=>1434080019,
+  "timestamp"=>1434080019,
+  "name"=>"robot.png",
+  "title"=>"robot",
+  "mimetype"=>"image/png",
+  "filetype"=>"png",
+  "pretty_type"=>"PNG",
+  "user"=>"U043CDAQU",
+  "editable"=>false,
+  "size"=>3446,
+  "mode"=>"hosted",
+  "is_external"=>false,
+  "external_type"=>"",
+  "is_public"=>false,
+  "public_url_shared"=>false,
+  "url"=>"https://slack-files.com/files-pub/T043CDAQN-F068PHD0R-5ef86791d5/robot.png",
+  "url_download"=>"https://slack-files.com/files-pub/T043CDAQN-F068PHD0R-5ef86791d5/download/robot.png",
+  "url_private"=>"https://files.slack.com/files-pri/T043CDAQN-F068PHD0R/robot.png",
+  "url_private_download"=>"https://files.slack.com/files-pri/T043CDAQN-F068PHD0R/download/my_heart.png", "thumb_64"=>"https://slack-files.com/files-tmb/T043CDAQN-F068PHD0R-e1ebed375a/my_heart_64.png",
+  "thumb_80"=>"https://slack-files.com/files-tmb/T043CDAQN-F068PHD0R-e1ebed375a/my_heart_80.png",
+  "thumb_360"=>"https://slack-files.com/files-tmb/T043CDAQN-F068PHD0R-e1ebed375a/my_heart_360.png",
+  "thumb_360_w"=>227,
+  "thumb_360_h"=>185,
+  "thumb_160"=>"https://slack-files.com/files-tmb/T043CDAQN-F068PHD0R-e1ebed375a/my_heart_160.png",
+  "image_exif_rotation"=>1,
+  "permalink"=>"https://myteam.slack.com/files/sly_fox/F068PHD0R/my_heart.png",
+  "permalink_public"=>"https://slack-files.com/T043CDAQN-F068PHD0R-5ef86791d5",
+  "channels"=>[],
+  "groups"=>[],
+  "ims"=>[],
+  "comments_count"=>0
+}, response=#<HTTParty::Response:0x1016d4a50 ...}>, code=200>
+```
 
 ### Search
 #### Search Everything
