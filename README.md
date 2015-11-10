@@ -59,11 +59,11 @@ client.auth.test
 ## Web API
 
 ### Basic Usage
-The apit methods follow the following format
+The api methods follow the following format
 ```ruby
 client.method_namespace.action(required, arguments, {optional: arguments})
 # Example:
-client.chat.post_message("some-channel-id", "some message to post", {option_param: })
+client.chat.post_message("some-channel-id", "some message to post", {optional_param: 'and its value'})
 ```
 These methods directly correspond to those found in the [Slack API Docs](https://api.slack.com/methods)
 
