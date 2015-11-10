@@ -7,6 +7,10 @@ module SlackChatter
         @client = client
       end
 
+      def channel_id_or_name
+
+      end
+
       def call_method(name_space, slack_method, params, http_method=:get)
         path = "#{name_space}.#{slack_method}"
         if http_method.to_sym == :get

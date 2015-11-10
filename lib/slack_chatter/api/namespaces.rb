@@ -16,64 +16,23 @@ require_relative './users.rb'
 module SlackChatter
   module Api
     module Namespaces
+      extend self
 
-      def api
-        @api ||= SlackChatter::Api::Api.new(self)
+      def method_missing(method, *args, &block)
+        return super method, *args, &block unless allowed_namespaces.include?(method.to_s)
+        self.class.send(:define_method, method) do
+          method_sym = "@#{method}".to_sym
+          self.instance_variable_get(method_sym) ||
+            self.instance_variable_set(method_sym, "SlackChatter::Api::#{method.capitalize}".constantize.new(self))
+        end
+        self.send method, *args, &block
       end
 
-      def auth
-        @auth ||= SlackChatter::Api::Auth.new(self)
+      private
+
+      def allowed_namespaces
+        %w{api auth channels chat emoji files groups im oauth rtm search stars team users}
       end
-
-      def channels
-        @channels ||= SlackChatter::Api::Channels.new(self)
-      end
-
-      def chat
-        @chat ||= SlackChatter::Api::Chat.new(self)
-      end
-
-      def emoji
-        @emoji ||= SlackChatter::Api::Emoji.new(self)
-      end
-
-      def files
-        @files ||= SlackChatter::Api::Files.new(self)
-      end
-
-      def groups
-        @groups ||= SlackChatter::Api::Groups.new(self)
-      end
-
-      def im
-        @im ||= SlackChatter::Api::Im.new(self)
-      end
-
-      def oauth
-        @oath ||= SlackChatter::Api::Oauth.new(self)
-      end
-
-      def rtm
-        @rtm ||= SlackChatter::Api::Rtm.new(self)
-      end
-
-      def search
-        @search ||= SlackChatter::Api::Search.new(self)
-      end
-
-      def stars
-        @stars ||= SlackChatter::Api::Stars.new(self)
-      end
-
-      def team
-        @team ||= SlackChatter::Api::Team.new(self)
-      end
-
-      def users
-        @users ||= SlackChatter::Api::Users.new(self)
-      end
-
-
     end
   end
 end

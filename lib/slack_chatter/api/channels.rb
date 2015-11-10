@@ -6,7 +6,7 @@ module SlackChatter
       def find_by_name name
         list.channels.detect do |channel|
           channel["name"] == name
-        end
+        end["id"]
       end
 
       def archive channel_id
