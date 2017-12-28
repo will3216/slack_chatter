@@ -2,7 +2,7 @@
 
 SlackChatter is a simple-to-use Slack API wrapper for ruby which makes it quick and easy to constantly annoy your friends, co-workers, and loved ones with waaayyyyy to many process status updates. It provides easy-access to all of the functionallity supported by the Slack Api with the following exceptions:
 - Real-Time Messaging
-(These are currently in the works and should be available shortly)
+(These are currently in the works and should be available between 0 and 10000000 years from now or at request!)
 
 Release Notes:
 - 0.9.0 - Added File uploading
